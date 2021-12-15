@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basic/dimens.dart';
 import 'package:flutter_basic/girdview.dart';
 import 'package:flutter_basic/listview.dart';
+import 'package:flutter_basic/login/login.dart';
 import 'package:flutter_basic/widget/buttonmenu.dart';
 
 
@@ -60,6 +61,9 @@ class _MyHomePageState extends State<MyHomePage> {
   void navigationToGirdView(){
     Navigator.push(context, MaterialPageRoute(builder: (context) => GirdViewDemo()));
   }
+  void navigationToLogin(){
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -114,6 +118,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: GestureDetector(
                               onTap: navigationToGirdView,
                               child: ButtonMenu(inputText: 'Gird View'),
+                            )
+                        ),
+                        Container(
+                            margin: EdgeInsets.all(5.w),
+                            child: GestureDetector(
+                              onTap: navigationToLogin,
+                              child: ButtonMenu(inputText: 'Login'),
                             )
                         )
                       ],

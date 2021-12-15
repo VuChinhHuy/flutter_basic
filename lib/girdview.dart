@@ -16,7 +16,7 @@ class _GirdViewDemoState extends State<GirdViewDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Gird View',
+          title: Text('Gird ,. b View',
             style: GoogleFonts.kanit(fontWeight: FontWeight.bold),),
           backgroundColor: Colors.teal,
         ),
